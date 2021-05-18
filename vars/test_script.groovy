@@ -1,13 +1,7 @@
 def build(){
+  def request = libraryResource 'scripts/test.sh'
+  echo request
   echo 'build app'
-  println System.getProperty("user.dir");
-  println '----------------------------'
-  def proc = "ls".execute()
-  def b = new StringBuffer()
-  proc.consumeProcessErrorStream(b)
-  println proc.text
-  println b.toString()
-
 }
 
 def test(){
