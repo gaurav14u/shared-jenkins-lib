@@ -1,6 +1,7 @@
 def build(){
   echo 'build app'
-  System.getProperty("user.dir");
+  println System.getProperty("user.dir");
+  println '----------------------------'
   def proc = "ls".execute()
   def b = new StringBuffer()
   proc.consumeProcessErrorStream(b)
